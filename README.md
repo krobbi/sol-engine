@@ -32,7 +32,7 @@ _Documentation for Sol is not yet available._
 The [NPM package](https://npmjs.com/package/sol-engine) for Sol
 is ```sol-engine```. This package is mainly used to provide development
 dependencies and build scripts in the repository. The package is published at
-version ```0.0.0``` and will _not_ be updated until a full release.
+version ```0.0.0-init``` and will _not_ be updated until a full release.
 
 # License
 MIT License - https://krobbi.github.io/license/mit-2020.txt
