@@ -1,0 +1,19 @@
+# System
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# IDE
+.idea
+.vscode
+*.suo
+*.sublime-project
+*.sublime-workspace
+
+# Ignore
+docs/css/
+docs/js/
+docs/favicon.ico
+docs/favicon.png
+docs/index.html
+notes/

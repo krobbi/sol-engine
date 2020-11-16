@@ -1,0 +1,112 @@
+*
+{
+	box-sizing: border-box;
+}
+
+body
+{
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-color: #080808;
+	color: #ffffff;
+	font-family: sans-serif;
+}
+
+p
+{
+	margin: 1em 0;
+}
+
+a
+{
+	cursor: pointer;
+	color: #fa9f25;
+	font-weight: bold;
+}
+
+a:hover
+{
+	color: #f3d180;
+}
+
+.block
+{
+	display: block;
+}
+
+.centered.block
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wrapper
+{
+	min-width: 52em;
+	max-width: 60em;
+	background-color: #222222;
+}
+
+.wrapper .section
+{
+	padding: 0 1em 1em 1em;
+}
+
+.wrapper .separating.section
+{
+	border-bottom: 0.25em solid #444444;
+}
+
+.centered.section
+{
+	text-align: center;
+}
+
+.screen
+{
+	background-color: #444444;
+}
+
+.button-set
+{
+	user-select: none;
+}
+
+.button
+{
+	border: 0;
+	padding: 1em;
+	background-color: #444444;
+	color: #ffffff;
+}
+
+.button:hover
+{
+	cursor: pointer;
+	background-color: #d62828;
+}
+
+.button:active
+{
+	background-color: #a12a31;
+}
+
+.wrapper .colorbar-set
+{
+	display: block;
+	width: 100%;
+}
+
+.wrapper .colorbar-set .colorbar
+{
+	height: 0.5em;
+}
+
+.colorbar-set .colorbar:nth-child(1){background-color: #f3d180;}
+.colorbar-set .colorbar:nth-child(2){background-color: #fcbf49;}
+.colorbar-set .colorbar:nth-child(3){background-color: #fa9f25;}
+.colorbar-set .colorbar:nth-child(4){background-color: #f77f00;}
+.colorbar-set .colorbar:nth-child(5){background-color: #e75414;}
+.colorbar-set .colorbar:nth-child(6){background-color: #d62828;}
+.colorbar-set .colorbar:nth-child(7){background-color: #a12a31;}

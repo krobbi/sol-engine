@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Sol Demo</title>
+		<link rel="icon" href="favicon.png">
+		<meta name="description" content="Lightweight JavaScript game engine.">
+		<meta name="author" content="Chris Roberts (Krobbizoid)">
+
+		<link rel="stylesheet" href="css/demo.css">
+
+		<script src="js/sol-dev.js"></script>
+		<script src="js/demo.js"></script>
+	</head>
+	<body>
+		<content class="centered wrapper block">
+			<section class="centered separating section">
+				<img class="centered block" src="img/header.png" alt="Sol" title="Sol"/>
+				<canvas id="sol-demo-screen" class="screen" title="Demo screen.">
+					Please use a browser that supports canvas elements.
+				</canvas>
+				<nav class="button-set">
+					<button class="button" onclick="btnStart();">Start</button>
+					<button class="button" onclick="btnRestart();">Restart</button>
+					<button class="button" onclick="btnStop();">Stop</button>
+				</nav>
+			</section>
+			<section class="section">
+				<p>
+					<a href="https://github.com/krobbi/sol-engine">GitHub</a><br>
+					<a href="https://krobbi.github.io/license/mit-2020.txt">License</a>
+				</p>
+				<span>
+					<strong>Copyright &copy; 2020 Chris Roberts</strong> (Krobbizoid)
+				</span>
+			</section>
+			<div class="colorbar-set" aria-hidden="true">
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+				<div class="colorbar"></div>
+			</div>
+		</content>
+	</body>
+</html>
