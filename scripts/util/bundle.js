@@ -48,7 +48,7 @@ function bundle(name, bannerSrc, mainSrc){
 					exclude: ["**/*.png", "**/*.glsl"],
 					extensions: "js",
 					// Preserve JSDoc comments not containing @ignore or @module:
-					comments: /^\*\*((?!@ignore|@module).|\n)+$/g,
+					comments: /^\*\*((?!@ignore|@module).|\n)+$/,
 					compactComments: true,
 					lineEndings: "unix",
 					maxEmptyLines: 0,
