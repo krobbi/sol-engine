@@ -1,6 +1,6 @@
 # ![Sol](docs/img/header.png)
 __Lightweight JavaScript game engine__  
-__Version 0.1.0__  
+__Version 0.2.0__  
 __MIT License__ - https://krobbi.github.io/license/mit-2020.txt  
 __Copyright &copy; 2020 Chris Roberts__ (Krobbizoid)
 
@@ -82,8 +82,13 @@ Shorthand for ```myGame.time.fps```.
 
 ```JavaScript
 // Managers:
-myGame.scene; // Manages creating, storing, changing, and destroying scenes.
-myGame.time;  // Stores read-only values for timing. May later be expanded.
+myGame.gfx;     // Stores the renderer and manages basic graphics operations.
+myGame.json;    // Manages loading, reading, and unloading JSON files.
+myGame.key;     // Allows you to check the state of keyboard input.
+myGame.scene;   // Manages creating, storing, changing, and destroying scenes.
+myGame.texture; // Manages loading, unloading, and rendering textures.
+myGame.time;    // Stores read-only values for timing. May later be expanded.
+myGame.loader;  // Keeps track of the loaded state of lists of assets.
 ```
 References to managers which provide APIs for interfacing with various game
 systems. These are summarized here but will be further documented in future.
@@ -112,12 +117,25 @@ example of creating a game instance with all of the default configuration set:
 ```JavaScript
 var myGame = new Sol.Game({
 	autoStart: false, // Whether to start the game once it is created.
+	gfx: { // Graphics manger configuration.
+		canvas: ".sol-canvas-parent", // The canvas or canvas parent to use.
+		renderer: Sol.WEBGL, // The preferred renderer to use.
+		width: 800, // The width of the resolution.
+		height: 600, // The height of the resolution.
+		glMaxTextures: 32, // The maximum number of textures per draw call in WebGL.
+		glMaxVerts: 16384 // The maximum number of verts per draw call in WebGL.
+	},
+	key: { // Keyboard input manager configuration.
+		enabled: true // Whether to listen for keyboard input.
+	},
 	scene: { // Scene manager configuration.
 		main: "main", // The key of the scene to start the game on.
 		scenes: {} // A dictionary of scene keys and scene class names.
 	}
 });
 ```
+It is recommended that you disable any unused input methods to improve
+performance.
 
 In order for the game instance to do anything, a scene must be attached to the
 game instance. A scene is declared as a class that inherits from the scene base:
@@ -189,8 +207,9 @@ _Further documentation for Sol is not yet available. It may be released
 alongside the full release of Sol._
 
 # Roadmap
-Planned features include mouse and keyboard input, texture loading and
-rendering, and game objects with components and behaviours.
+Planned features include rectangle rendering, texture tinting, sprite sheets,
+bitmap fonts, mouse input, and game objects with components and behaviours. Some
+refactoring of architecture may be neccessary.
 
 # NPM
 The [NPM package](https://npmjs.com/package/sol-engine) for Sol

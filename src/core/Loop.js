@@ -167,7 +167,10 @@ class Loop {
 	* @private
 	*/
 	_onStart(){
-		consoleSplash();
+		this._game.gfx.onStart();
+		consoleSplash(this._game);
+		this._game.texture.onStart();
+		this._game.key.onStart();
 		this._game.scene.onStart();
 	}
 
@@ -177,8 +180,11 @@ class Loop {
 	*/
 	_onUpdate(){
 		this._game.time.onPreTick(this._delta);
+		this._game.key.onPreTick();
 		this._game.scene.onTick();
+		this._game.gfx.onPreDraw();
 		this._game.scene.onDraw();
+		this._game.gfx.onPostDraw();
 	}
 
 	/**
@@ -187,6 +193,11 @@ class Loop {
 	*/
 	_onStop(){
 		this._game.scene.onStop();
+		this._game.key.onStop();
+		this._game.loader.onStop();
+		this._game.texture.onStop();
+		this._game.json.onStop();
+		this._game.gfx.onStop();
 	}
 
 	/**

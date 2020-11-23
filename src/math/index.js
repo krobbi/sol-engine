@@ -2,7 +2,8 @@
 * @module Sol/math
 */
 
-import clamp from "./clamp.js";
+import clamp       from "./clamp.js";
+import OrthoMatrix from "./OrthoMatrix.js";
 
 /**
 * Stores mathematical utilities.
@@ -11,7 +12,8 @@ import clamp from "./clamp.js";
 * @type {Object<string, function>}
 */
 const math = {
-	clamp: clamp
+	clamp:       clamp,
+	OrthoMatrix: OrthoMatrix
 };
 
 export default math;

@@ -12,9 +12,17 @@
 	"keywords": [
 		"sol",
 		"sol-engine",
+		"2d",
+		"html5",
 		"game-engine",
 		"game-framework",
-		"in-development"
+		"in-development",
+		"html-canvas",
+		"webgl",
+		"webgl2",
+		"glsl",
+		"canvas2d",
+		"canvasrenderingcontext2d"
 	],
 	"scripts": {
 		"dev": "node scripts/dev.js",

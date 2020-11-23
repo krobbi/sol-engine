@@ -13,6 +13,7 @@ Thumbs.db
 # Ignore
 docs/css/
 docs/js/
+docs/res/
 docs/favicon.ico
 docs/favicon.png
 docs/index.html

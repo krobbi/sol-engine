@@ -3,6 +3,7 @@
 */
 
 import object from "./object/index.js";
+import noop   from "./noop.js";
 
 /**
 * Stores global utilities for Sol.
@@ -11,7 +12,8 @@ import object from "./object/index.js";
 * @type {Object<string, function|Object<string, function>>}
 */
 const util = {
-	object: object
+	object: object,
+	noop:   noop
 };
 
 export default util;

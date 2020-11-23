@@ -1,8 +1,12 @@
 /**
 * @module Sol/core/Config
+* @typedef {GfxManagerConfig}   Sol.gfx.GfxManagerConfig
+* @typedef {KeyManagerConfig}   Sol.key.KeyManagerConfig
 * @typedef {SceneManagerConfig} Sol.scene.SceneManagerConfig
 */
 
+import GfxManagerConfig   from "../gfx/GfxManagerConfig.js";
+import KeyManagerConfig   from "../key/KeyManagerConfig.js";
 import SceneManagerConfig from "../scene/SceneManagerConfig.js";
 
 import getDefault from "../util/object/getDefault.js";
@@ -26,6 +30,18 @@ class Config {
 		* @default false
 		*/
 		this.autoStart = !!getDefault(options, "autoStart", false);
+
+		/**
+		* Stores configuration for the graphics manager.
+		* @type {Sol.gfx.GfxManagerConfig}
+		*/
+		this.gfx = new GfxManagerConfig(getDefault(options, "gfx", {}));
+
+		/**
+		* Stores configuration for the keyboard input manager.
+		* @type {Sol.key.KeyManagerConfig}
+		*/
+		this.key = new KeyManagerConfig(getDefault(options, "key", {}));
 
 		/**
 		* Stores configuration for the scene manager.
