@@ -21,7 +21,7 @@ is not yet suitable for making games.
 
 # Notice
 This project is on indefinite hiatus. It is not necessarily abandoned, but it
-will likely not be recieving any updates any time soon. Game engines are highly
+will likely not be receiving any updates any time soon. Game engines are highly
 complex, multi-faceted pieces of software, and making your own is typically
 discouraged.
 
