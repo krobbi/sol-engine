@@ -50,7 +50,7 @@ Most of the work on a Phaser game is done in JavaScript as there is no official
 editor program for it.
 
 [Phaser Editor 2D](https://phasereditor2d.com) is an unofficial freemium editor
-for Phaser with a simmilar interface to other game engines, however it requires
+for Phaser with a similar interface to other game engines, however it requires
 an account to use, and the free version is limited to 70 files per project and
 50MB of storage.
 
@@ -116,7 +116,7 @@ The demo page for the development (unfinished, possibly buggy) version of Sol is
 located at https://krobbi.github.io/sol-engine.
 
 # Usage
-The latest distribution version of Sol can be found in the ```/dist``` folder
+The latest distribution version of Sol can be found in the `dist/` folder
 and specific versions of Sol can be downloaded from the
 [GitHub releases page](https://github.com/krobbi/sol-engine/releases).
 
@@ -166,13 +166,13 @@ A read-only boolean property representing whether the game is running.
 myGame.delta;
 ```
 A read-only number property representing the time since the previous game tick
-in seconds. Shorthand for ```myGame.time.delta```.
+in seconds. Shorthand for `myGame.time.delta`.
 
 ```JavaScript
 myGame.fps;
 ```
 A read-only number property representing the number of frames per second.
-Shorthand for ```myGame.time.fps```.
+Shorthand for `myGame.time.fps`.
 
 ```JavaScript
 // Managers:
@@ -302,12 +302,12 @@ alongside the full release of Sol._
 
 # NPM
 The [NPM package](https://npmjs.com/package/sol-engine) for Sol
-is ```sol-engine```. This package is mainly used to provide development
+is `sol-engine`. This package is mainly used to provide development
 dependencies and build scripts in the repository. The package is published at
-version ```0.0.0-init``` and will _not_ be updated until a full release.
+version `0.0.0-init` and will _not_ be updated until a full release.
 
 # License
-MIT License - https://krobbi.github.io/license/mit-2020.txt
+MIT License - https://krobbi.github.io/license/2020/mit.txt
 
 ---
 

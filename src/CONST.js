@@ -32,9 +32,9 @@ const CONST = {
 	* @constant
 	* @type {string}
 	* @name Sol.LICENSE_URL
-	* @default "https://krobbi.github.io/license/mit-2020.txt"
+	* @default "https://krobbi.github.io/license/2020/mit.txt"
 	*/
-	LICENSE_URL: "https://krobbi.github.io/license/mit-2020.txt",
+	LICENSE_URL: "https://krobbi.github.io/license/2020/mit.txt",
 
 	/**
 	* The copyright holder for this version of Sol.
