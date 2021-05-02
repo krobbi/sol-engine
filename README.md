@@ -33,82 +33,6 @@ issues which can sway the usability and code quality of the finished engine.
 Unless you want the satisfaction of creating your own engine, in the vast
 majority of cases it is recommended to use an existing engine.
 
-If you want to make a game, I would recommend the following frameworks and
-engines. I am not associated with any of these, or any other company that makes
-game engines, this is just my opinion.
-
-### Phaser
-https://phaser.io
-https://github.com/photonstorm/phaser
-
-Phaser is a JavaScript game framework, which was also used in some places as a
-reference for this project. It is one of the most popular game frameworks that
-specifically target web games, and provides extensive documentation and
-examples.
-
-Most of the work on a Phaser game is done in JavaScript as there is no official
-editor program for it.
-
-[Phaser Editor 2D](https://phasereditor2d.com) is an unofficial freemium editor
-for Phaser with a similar interface to other game engines, however it requires
-an account to use, and the free version is limited to 70 files per project and
-50MB of storage.
-
-### Unity
-https://unity.com
-
-An incredibly popular game engine which can export to just about every platform
-imaginable. You should have very little trouble finding some good Unity
-tutorials.
-
-Unity uses C# for scripts which makes them fast and robust. The architecture of
-Unity is a typical entity component system which allows you to attach many
-components and behaviours to game objects, which lets you compose them quite
-quickly and easily.
-
-The personal edition of Unity is free to use, and provides almost all of the
-functionality available in the premium editions, although you will have to deal
-with the "Made with Unity" boot screen leaving a bad first impression on some
-users.
-
-Installing and opening Unity is a huge pain. You need to create an account,
-download the Unity launcher, install a specific version of Unity, and open a
-project file. This is not too difficult, however this process can take a long
-time, especially on slower computers.
-
-### Godot
-https://godotengine.org
-https://github.com/godotengine/godot
-
-Godot is a free, open source general-purpose game engine with 2D and 3D
-capabilities released under the MIT license. Using Godot only requires running a
-single executable, and the editor starts up incredibly quickly. Many example and
-template projects are available, and can be downloaded and run from inside the
-editor.
-
-Godot uses a node-based system where every scene, game object, and component is
-represented as a tree of nodes, which can optionally have scripts attached to
-them. Any saved tree of nodes in Godot is considered a scene, and can be edited
-separately with very little clutter. Scenes may be instanced in or extended by
-many other scenes. This can also be done in code if necessary.
-
-Godot does have an optional Mono edition which allows you to use C# for
-scripting. Both the standard and Mono editions also include GDScript, a
-Python-like language which includes some useful shortcuts for interacting with
-the Godot API and editor. Nodes also have a 'signal' system which is very useful
-for broadcasting events between nodes.
-
-While the node system allows games to be highly structured, it creates a
-significant challenge in deciding which type of node to use for game objects.
-The fact that each node can only have one script attached to can also create
-issues if you are used to simply adding many scripts to a game object in an
-engine such as Unity. The editor may also be a little hard to navigate at first.
-
-The node system may be quite hard to grasp, and may require a lot of practice to
-use it to its full potential. Some important concepts for using Godot include
-node inheritance, resources, using external scripts as utilities or singletons,
-and the idea that each node is equivalent to a single component.
-
 ---
 
 # Demo
@@ -304,7 +228,7 @@ alongside the full release of Sol._
 The [NPM package](https://npmjs.com/package/sol-engine) for Sol
 is `sol-engine`. This package is mainly used to provide development
 dependencies and build scripts in the repository. The package is published at
-version `0.0.0-init` and will _not_ be updated until a full release.
+version `0.2.0-h` and will _not_ be updated until a full release.
 
 # License
 MIT License - https://krobbi.github.io/license/2020/mit.txt

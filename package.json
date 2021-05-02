@@ -1,9 +1,9 @@
 {
 	"name": "sol-engine",
-	"description": "Lightweight JavaScript game engine.",
-	"version": "0.0.0-init",
+	"description": "Lightweight JavaScript game engine (hiatus).",
+	"version": "0.2.0-h",
 	"license": "MIT",
-	"licenseUrl": "https://krobbi.github.io/license/mit-2020.txt",
+	"licenseUrl": "https://krobbi.github.io/license/2020/mit.txt",
 	"author": "Chris Roberts (Krobbizoid)",
 	"homepage": "https://krobbi.github.io/sol-engine",
 	"bugs": "https://github.com/krobbi/sol-engine/issues",
