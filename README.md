@@ -1,7 +1,7 @@
 # ![Sol](docs/img/header.png)
 __Lightweight JavaScript game engine__  
 __Version 0.2.0__  
-__MIT License__ - https://krobbi.github.io/license/mit-2020.txt  
+__MIT License__ - https://krobbi.github.io/license/2020/mit.txt  
 __Copyright &copy; 2020 Chris Roberts__ (Krobbizoid)
 
 _This project is on indefinite hiatus. See the notice below._
@@ -12,8 +12,7 @@ _This project is on indefinite hiatus. See the notice below._
 3. [Demo](#demo)
 4. [Usage](#usage)
 5. [Documentation](#documentation)
-6. [NPM](#npm)
-7. [License](#license)
+6. [License](#license)
 
 # About
 Sol is a lightweight JavaScript game engine. It is in early development and
@@ -223,12 +222,6 @@ Further documentation is not yet available.
 # Documentation
 _Further documentation for Sol is not yet available. It may be released
 alongside the full release of Sol._
-
-# NPM
-The [NPM package](https://npmjs.com/package/sol-engine) for Sol
-is `sol-engine`. This package is mainly used to provide development
-dependencies and build scripts in the repository. The package is published at
-version `0.2.0-h` and will _not_ be updated until a full release.
 
 # License
 MIT License - https://krobbi.github.io/license/2020/mit.txt
