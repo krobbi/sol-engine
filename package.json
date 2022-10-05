@@ -1,28 +1,20 @@
 {
 	"name": "sol-engine",
-	"description": "Lightweight JavaScript game engine (hiatus).",
+	"description": "Lightweight JavaScript game engine. (Abandoned.)",
 	"version": "",
 	"license": "MIT",
 	"licenseUrl": "https://krobbi.github.io/license/2020/mit.txt",
 	"author": "Chris Roberts (Krobbizoid)",
-	"homepage": "https://krobbi.github.io/sol-engine",
+	"homepage": "https://github.com/krobbi/sol-engine",
 	"bugs": "https://github.com/krobbi/sol-engine/issues",
 	"main": "./src/Sol.js",
 	"browser": "./dist/sol.min.js",
 	"keywords": [
-		"sol",
-		"sol-engine",
-		"2d",
-		"html5",
+		"abandoned",
 		"game-engine",
-		"game-framework",
-		"in-development",
-		"html-canvas",
 		"webgl",
-		"webgl2",
 		"glsl",
-		"canvas2d",
-		"canvasrenderingcontext2d"
+		"canvas2d"
 	],
 	"scripts": {
 		"dev": "node scripts/dev.js",
