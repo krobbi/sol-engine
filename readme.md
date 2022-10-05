@@ -3,7 +3,7 @@ _Lightweight JavaScript game engine._
 __Version 0.2.0__  
 __Copyright &copy; 2020 Chris Roberts__ (Krobbizoid).
 
-_This project is abandoned._
+_This project is abandoned. (Archived and read-only.)_
 
 # Contents
 1. [About](#about)
